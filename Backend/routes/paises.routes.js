@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getPaises, postPaises } from "../controllers/paises.js";
+import { getPaises, postPaises } from "../controllers/paises.controllers.js";
 
 const router = Router();
 

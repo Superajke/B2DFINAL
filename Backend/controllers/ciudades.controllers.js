@@ -1,4 +1,4 @@
-import postpool from "../postgres.js";
+import postpool from "../db/postgres.js";
 
 export const getCiudades = async (req, res) => {
   try {

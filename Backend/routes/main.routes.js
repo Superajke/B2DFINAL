@@ -9,6 +9,7 @@ import sedesRoutes from "./sedes.routes.js";
 import programasRoutes from "./programas.routes.js";
 import tiposEmpleadosRoutes from "./tiposEmpleados.routes.js";
 import departamentosRoutes from "./departamentos.routes.js";
+import eventoRoutes from "./evento.routes.js";
 
 const router = Router();
 
@@ -22,5 +23,6 @@ router.use(programasRoutes);
 router.use(tiposContRoutes);
 router.use(tiposEmpleadosRoutes);
 router.use(departamentosRoutes);
+router.use(eventoRoutes);
 
 export default router;

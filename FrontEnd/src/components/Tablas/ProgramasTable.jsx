@@ -1,18 +1,18 @@
 import React from "react";
-import useDepartamentos from "../../hooks/departamentos.hooks";
+import useProgramas from "../../hooks/programas.hooks.jsx";
 
-function DepartamentosTable() {
-  const paises = useDepartamentos();
+function ProgramasTable() {
+  const paises = useProgramas();
   return (
     <>
       <div className="table_top">
-        <h1 className="tabla_titulo">Departamentos</h1>
+        <h1 className="tabla_titulo">Programas</h1>
       </div>
       <table className="eventos__table">
         <thead>
           <tr>
             <th>Código</th>
-            <th>Departamento</th>
+            <th>Programa</th>
           </tr>
         </thead>
         <tbody>
@@ -28,4 +28,4 @@ function DepartamentosTable() {
   );
 }
 
-export default DepartamentosTable;
+export default ProgramasTable;

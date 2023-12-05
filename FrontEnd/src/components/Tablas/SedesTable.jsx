@@ -7,7 +7,6 @@ function PaisesTable() {
     <>
       <div className="table_top">
         <h1 className="tabla_titulo">Sedes</h1>
-        <span style={{ fontSize: "3rem", cursor: "pointer" }}>➕</span>
       </div>
       <table className="eventos__table">
         <thead>

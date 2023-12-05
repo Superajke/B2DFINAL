@@ -33,12 +33,12 @@ Se espera que la aplicación tome la información que hay disponible en Postgres
 
 Por temas de tiempo no se pudo hacer ningun create deste frontend, solo hay Reads en el frontend por lo cual los Create se hacen desde cualquier tipo post man
 
-#Ejemplo get
+# Ejemplo get
 ```bash
 http://localhost:3000/departamentos
 
 ```
-#Response
+# Response
 ```bash
 [
   {

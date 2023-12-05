@@ -1,0 +1,75 @@
+.evento {
+  text-align: center;
+  margin: 10rem;
+  background-color: rgba(255, 255, 255, 0.14);
+  width: 80%;
+  height: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.evento__titulo {
+  color: #fff;
+  font-size: 6rem;
+  text-shadow: 0.7rem 0.7rem 0.7rem var(--background-color-dark);
+  text-align: center;
+}
+
+.evento__descripcion {
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  width: fit-content;
+  padding: 0.25rem;
+  text-shadow: 0.6rem 0.6rem 0.7rem var(--background-color-dark);
+  border-bottom: 0.1rem solid var(--primary-color);
+}
+
+.evento__categorias {
+  color: #fff;
+  margin-top: 2rem;
+  text-shadow: 0.6rem 0.6rem 0.7rem var(--background-color-dark);
+  padding: 0.5rem;
+  border-radius: 0.1rem;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.evento__personas {
+  display: flex;
+}
+.evento__tit_personas {
+  color: #fff;
+  text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+  font-size: 2rem;
+}
+
+.evento__personas ul li {
+  list-style: none;
+  margin: 1rem;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.evento__fecha {
+  font-size: 2rem;
+  color: #fff;
+  order: 1;
+  margin-top: auto;
+}
+
+.evento__bttn{
+    background-color: rgb(255, 255, 255, 0);
+    color: white;
+    font-size: 2rem;
+    margin-top: 3rem;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}

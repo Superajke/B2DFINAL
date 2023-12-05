@@ -32,9 +32,36 @@ const schemaComentario = new mongoose.Schema(
   { _id: false }
 );
 
-const schemaAsistenteConferencista = new mongoose.Schema(
+const schemaConferencista = new mongoose.Schema(
   {
-    identificador: {
+    identificador_conf: {
+      type: String,
+      required: true,
+    },
+    nombreUsuario: {
+      type: String,
+      required: true,
+    },
+    nombreCompleto: {
+      type: String,
+      required: true,
+    },
+    tipoRelacion: {
+      type: String,
+      required: true,
+    },
+    email: {
+      type: String,
+      required: true,
+    },
+    ciudad: schemaCiudad,
+  },
+  { _id: false }
+);
+
+const schemaAsistente = new mongoose.Schema(
+  {
+    identificador_asis: {
       type: String,
       required: true,
     },
@@ -117,8 +144,8 @@ const schemaEvento = new mongoose.Schema({
     },
     ciudad: schemaCiudad,
   },
-  asistentes: [schemaAsistenteConferencista],
-  conferencistas: [schemaAsistenteConferencista],
+  asistentes: [schemaAsistente],
+  conferencistas: [schemaConferencista],
   facultadesOrganizadoras: [schemaFacultad],
   programasOrganizadores: [schemaPrograma],
   comentarios: [schemaComentario],

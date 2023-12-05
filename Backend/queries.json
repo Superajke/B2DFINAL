@@ -1,0 +1,163 @@
+[
+  {
+  "titulo": "Conferencia sobre Tecnología",
+  "descripcion": "Una conferencia informativa sobre las últimas tendencias tecnológicas",
+  "categorias": [
+    "Tecnología",
+    "Innovación"
+  ],
+  "fecha": "2023-12-31T18:00:00.000Z",
+  "lugar": {
+    "nombre": "Centro de Convenciones",
+    "direccion": "Calle Principal 123",
+    "ciudad": {
+      "nombre": "MEDELLIN",
+      "departamento": "ANTIOQUIA",
+      "pais": "COLOMBIA"
+    }
+  },
+  "asistentes": [
+    {
+      "identificador_asis": "ID123",
+      "nombreUsuario": "usuario1",
+      "nombreCompleto": "Juan Pérez",
+      "tipoRelacion": "Estudiante",
+      "email": "juan@example.com",
+      "ciudad": {
+        "nombre": "MEDELLIN",
+        "departamento": "ANTIOQUIA",
+        "pais": "COLOMBIA"
+      }
+    },
+    {
+      "identificador_asis": "ID456",
+      "nombreUsuario": "usuario2",
+      "nombreCompleto": "Ana Gómez",
+      "tipoRelacion": "Profesor",
+      "email": "ana@example.com",
+      "ciudad": {
+        "nombre": "MEDELLIN",
+        "departamento": "ANTIOQUIA",
+        "pais": "COLOMBIA"
+      }
+    }
+  ],
+  "conferencistas": [
+    {
+      "identificador_conf": "ID789",
+      "nombreUsuario": "conferencista1",
+      "nombreCompleto": "Carlos Rodríguez",
+      "tipoRelacion": "Investigador",
+      "email": "carlos@example.com",
+      "ciudad": {
+        "nombre": "MEDELLIN",
+        "departamento": "ANTIOQUIA",
+        "pais": "COLOMBIA"
+      }
+    }
+  ],
+  "facultadesOrganizadoras": [
+    {
+      "codigo": 1,
+      "nombre": "INGENIERIA"
+    }
+  ],
+  "programasOrganizadores": [
+    {
+      "codigo": 15,
+      "nombre": "INGENIERIA INFORMATICA"
+    }
+  ],
+  "comentarios": [
+    {
+      "texto": "Excelente conferencia",
+      "usuario": "usuario1"
+    },
+    {
+      "texto": "Muy informativo",
+      "usuario": "usuario2"
+    }
+  ]
+},
+
+{
+  "titulo": "Maratón de programación",
+  "descripcion": "Evento maratón de programación en donde se pondrán a prueba las habilidades de cada uno",
+  "categorias": [
+    "Tecnología",
+    "Innovación"
+  ],
+  "fecha": "2023-12-15T10:00:00.000Z",
+  "lugar": {
+    "nombre": "Bloque P13",
+    "direccion": "Carrera 48 No. 7 – 151",
+    "ciudad": {
+      "nombre": "MEDELLIN",
+      "departamento": "ANTIOQUIA",
+      "pais": "COLOMBIA"
+    }
+  },
+  "asistentes": [
+    {
+      "identificador_asis": "ID123",
+      "nombreUsuario": "usuario1",
+      "nombreCompleto": "Juan Pérez",
+      "tipoRelacion": "Estudiante",
+      "email": "juan@example.com",
+      "ciudad": {
+        "nombre": "MEDELLIN",
+        "departamento": "ANTIOQUIA",
+        "pais": "COLOMBIA"
+      }
+    },
+    {
+      "identificador_asis": "ID456",
+      "nombreUsuario": "usuario2",
+      "nombreCompleto": "Ana Gómez",
+      "tipoRelacion": "Profesor",
+      "email": "ana@example.com",
+      "ciudad": {
+        "nombre": "MEDELLIN",
+        "departamento": "ANTIOQUIA",
+        "pais": "COLOMBIA"
+      }
+    }
+  ],
+  "conferencistas": [
+    {
+      "identificador_conf": "ID789",
+      "nombreUsuario": "conferencista1",
+      "nombreCompleto": "Carlos Rodríguez",
+      "tipoRelacion": "Investigador",
+      "email": "carlos@example.com",
+      "ciudad": {
+        "nombre": "MEDELLIN",
+        "departamento": "ANTIOQUIA",
+        "pais": "COLOMBIA"
+      }
+    }
+  ],
+  "facultadesOrganizadoras": [
+    {
+      "codigo": 1,
+      "nombre": "INGENIERIA"
+    }
+  ],
+  "programasOrganizadores": [
+    {
+      "codigo": 15,
+      "nombre": "INGENIERIA INFORMATICA"
+    }
+  ],
+  "comentarios": [
+    {
+      "texto": "Excelente conferencia",
+      "usuario": "usuario1"
+    },
+    {
+      "texto": "Muy informativo",
+      "usuario": "usuario2"
+    }
+  ]
+}
+]

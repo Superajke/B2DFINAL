@@ -2,13 +2,13 @@ import Evento from "../models/evento.model.js";
 import postpool from "../db/postgres.js";
 
 export const getEventos = async (req, res) => {
-    try {
-        const eventos = await Evento.find();
-        res.status(200).json(eventos);
-    } catch (error) {
-        res.status(404).json({ message: error.message });
-    }
-}
+  try {
+    const eventos = await Evento.find();
+    res.status(200).json(eventos);
+  } catch (error) {
+    res.status(404).json({ message: error.message });
+  }
+};
 
 export const postEvento = async (req, res) => {
   try {
@@ -74,5 +74,48 @@ export const postEvento = async (req, res) => {
     }
   } catch (error) {
     res.status(409).json({ message: error.message });
+  }
+};
+
+export const updateEvento = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const updatedEventoData = req.body;
+
+    const existingEvento = await Evento.findById(id);
+    if (!existingEvento) {
+      return res.status(404).json({ message: "Evento no encontrado" });
+    }
+
+    existingEvento.lugar = updatedEventoData.lugar;
+    existingEvento.facultadesOrganizadoras = updatedEventoData.facultadesOrganizadoras;
+    existingEvento.asistentes = updatedEventoData.asistentes;
+    existingEvento.programasOrganizadores = updatedEventoData.programasOrganizadores;
+
+    await existingEvento.save();
+
+    res.status(200).json({
+      message: "Evento actualizado exitosamente",
+      data: existingEvento,
+    });
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+};
+
+export const deleteEvento = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const existingEvento = await Evento.findByIdAndDelete(id);
+    if (!existingEvento) {
+      return res.status(404).json({ message: "Evento no encontrado" });
+    }
+
+    await existingEvento.deleteOne();
+
+    res.status(200).json({ message: "Evento eliminado exitosamente" });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
   }
 };

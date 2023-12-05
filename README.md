@@ -1,4 +1,4 @@
-# B2DFINAL
+# Base de Datos 2 FINAL
 
 El Politécnico Colombiano JIC, necesita un sistema para gestionar los diferentes eventos, charlas, conferencias y reuniones que se realizan, para ello se necesita una aplicación que permita registrar los eventos y se quiere que sean almacenados en una BD NoSQL como (Libre). Del evento se requiere título, descripción, categorías que sirven para realizar búsquedas, fecha y lugar del evento, así como la información de los asistentes, conferencistas o facilitadores, las facultades organizadoras (de forma opcional se puede tener el programa que organizó) y los comentarios del evento.
 

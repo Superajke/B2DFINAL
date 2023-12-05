@@ -44,3 +44,16 @@ export const postEmpleados = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+export const getEmpleadoById = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const response = await postpool.query(
+      "SELECT * FROM empleados WHERE identificacion = $1",
+      [id]
+    );
+    res.status(200).json(response.rows);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};

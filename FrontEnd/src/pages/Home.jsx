@@ -19,6 +19,7 @@ function Home() {
             {">"} Selecciona la opción acceder para continuar.
           </p>
         </section>
+        <div className="landing__buttons">
         <button
           className="profile_button"
           onClick={() => {
@@ -30,6 +31,18 @@ function Home() {
         >
           Acceder
         </button>
+        <button
+          className="profile_button-m"
+          onClick={() => {
+            setBlend(true);
+            setTimeout(() => {
+              navigate("/utilidades");
+            }, 2200);
+          }}
+        >
+          Admin
+        </button>
+        </div>
       </section>
     </section>
   );

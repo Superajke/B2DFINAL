@@ -59,7 +59,21 @@ const schemaAsistenteConferencista = new mongoose.Schema(
   { _id: false }
 );
 
-const schemaFacultadPrograma = new mongoose.Schema(
+const schemaFacultad = new mongoose.Schema(
+  {
+    codigo: {
+      type: Number,
+      required: true,
+    },
+    nombre: {
+      type: String,
+      required: true,
+    },
+  },
+  { _id: false }
+);
+
+const schemaPrograma = new mongoose.Schema(
   {
     codigo: {
       type: Number,
@@ -105,8 +119,8 @@ const schemaEvento = new mongoose.Schema({
   },
   asistentes: [schemaAsistenteConferencista],
   conferencistas: [schemaAsistenteConferencista],
-  facultadesOrganizadoras: [schemaFacultadPrograma],
-  programasOrganizadores: [schemaFacultadPrograma],
+  facultadesOrganizadoras: [schemaFacultad],
+  programasOrganizadores: [schemaPrograma],
   comentarios: [schemaComentario],
 });
 
